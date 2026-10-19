@@ -28,3 +28,4 @@
 - use source_location?
 - allow unordered/enumerated html lists
   - doc string static member with parameter pack argument to put all into relevant html tags.
+- reference to ignored field/type
