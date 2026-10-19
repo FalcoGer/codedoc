@@ -5,10 +5,13 @@
 - Document self?
   - How? - need to define the annotation type
 - Don't allow documentation outside of to be documented namespace
+- default parameter documentation for function parameter.
+  - doc string because can be arbitrary expression. could contain links.
 - Forbid nonsense items like return or throws documentation for types
   - FunctionDocumentation class and TypeDocumentationClass?
   - Remove brief header for namespaces (can't have attributes)
   - Or static assert that they are empty for these cases?
+  - default parameter documentation for function parameters without default parameter
 - Add tests
   - template specialization
   - out of namespace references that are not global or std
