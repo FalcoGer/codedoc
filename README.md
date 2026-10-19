@@ -1,8 +1,7 @@
 # codedoc
-C++26 reflection documentation generator
+Header only C++26 reflection documentation generator.
 
 ## Disclaimer
-
 Prototype. Not production ready.
 
 ## Usage
