@@ -1,6 +1,10 @@
 - Overloaded functions should point to each other automatically
+  - using links with the full signature as the text
+  - should be omitted if no overloads exist
+  - should not link to self (but have an entry present as non clickable text)
 - Document self?
-  - How?
+  - How? - need to define the annotation type
+- Don't allow documentation outside of to be documented namespace
 - Forbid nonsense items like return or throws documentation for types
   - FunctionDocumentation class and TypeDocumentationClass?
   - Remove brief header for namespaces (can't have attributes)
@@ -18,4 +22,6 @@
   - deducing this
   - template member functions
   - auto parameter
+  - documented type parameter
+  - not yet documented, but documentable type parameter
 - Don't compiler error on boost::multiprecision
