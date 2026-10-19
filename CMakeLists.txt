@@ -16,6 +16,13 @@ elseif(CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
 	if(DEFINED GCC_CXX_COMPILER_FLAGS)
         set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${GCC_CXX_COMPILER_FLAGS}")
     endif()
+    # enable c++26 reflection. LTO not supported with annotations yet (ICE).
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fno-lto -freflection")
 endif()
+
+# remove docs folder on clean
+set_directory_properties(PROPERTIES
+    ADDITIONAL_CLEAN_FILES "${CMAKE_CURRENT_BINARY_DIR}/docs;${CMAKE_CURRENT_BINARY_DIR}/inception"
+)
 
 add_executable(codedoc doc_test.cpp)
