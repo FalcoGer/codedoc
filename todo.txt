@@ -25,3 +25,4 @@
   - documented type parameter
   - not yet documented, but documentable type parameter
 - Don't compiler error on boost::multiprecision
+- source location?
