@@ -1,0 +1,21 @@
+- Overloaded functions should point to each other automatically
+- Document self?
+  - How?
+- Forbid nonsense items like return or throws documentation for types
+  - FunctionDocumentation class and TypeDocumentationClass?
+  - Remove brief header for namespaces (can't have attributes)
+  - Or static assert that they are empty for these cases?
+- Add tests
+  - template specialization
+  - out of namespace references that are not global or std
+  - ignore on member
+  - doc on non member variables
+  - volatile
+  - pointers and references
+  - nested pointers with various qualifiers (const, volatile)
+  - document types from class template initialization (template <typename T> struct C{T data{};}; using DocThis = C<int>;)
+  - copy/move constructor stuff
+  - deducing this
+  - template member functions
+  - auto parameter
+- Don't compiler error on boost::multiprecision
