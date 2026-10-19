@@ -25,4 +25,6 @@
   - documented type parameter
   - not yet documented, but documentable type parameter
 - Don't compiler error on boost::multiprecision
-- source location?
+- use source_location?
+- allow unordered/enumerated html lists
+  - doc string static member with parameter pack argument to put all into relevant html tags.
